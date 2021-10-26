@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.red').click(function () {
+                $("#text_color").css("color","red");
+            });
+            $('.green').click(function () {
+                $("#text_color").css("color","green");
+            });
+            $('.blue').click(function () {
+                $("#text_color").css("color","blue");
+            });
+            $('.purple').click(function () {
+                $("#text_color").css("color","purple");
+            });
+        });
+    </script>
+   
+</head>
+
+<body>
+    <h1 id="text_color">Click on any option to change text color</h1>
+    <form>
+        <input type="radio" name="color" class="red" value="red">Red&nbsp;&nbsp;
+        <input type="radio" name="color" class="green" value="green">Green&nbsp;&nbsp;
+        <input type="radio" name="color" class="blue" value="blue">Blue&nbsp;&nbsp;
+        <input type="radio" name="color" class="purple" value="purple">Purple&nbsp;&nbsp;
+    </form>
+
+</body>
+
+</html>

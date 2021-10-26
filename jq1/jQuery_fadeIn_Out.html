@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In & Out</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            margin: 40px;
+            background-color: blue;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+   $(document).ready(function()
+        {
+            $('#in').click(function(){
+                $("#img1").fadeIn();
+                $("#img1").fadeIn("slow");
+                // $("#img1").fadeIn("fast");
+                $("#img1").fadeIn(5000);
+            });
+
+            $('#out').click(function(){
+                $("#img2").fadeOut();
+                $("#img2").fadeOut("slow");
+                // $("#img2").fadeIn("fast");
+                $("#img2").fadeOut(5000);
+            });
+        });
+    </script>
+   
+</head>
+<body>
+    <h1>Click on button to FadeIn image</h1>
+    <button type="button" id="in">Fade In</button>  <br><br>
+    <img id="img1" src="../images/car.jpg" alt="" width="500px" height="500px" style="display: none;">
+   
+    <h1>Click on button to FadeOut image</h1>
+    <button type="button" id="out">Fade Out</button>  <br><br>
+    <img id="img2" src="../images/car2.jpg" alt="" width="500px" height="500px">
+</body>
+</html>

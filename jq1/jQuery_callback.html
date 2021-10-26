@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            margin: 40px;
+            background-color: blue;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+   $(document).ready(function()
+        {
+            $('#call_back').click(function()
+            {
+               
+                $("#p1").fadeOut("fast",function()
+                {
+                    $("#img1").fadeIn("slow");
+                    $("#img1").fadeIn(3000);
+                });
+                
+            });
+        });
+    </script>
+   
+</head>
+<body>
+    <h1>Callback Function</h1>
+    <button type="button" id="call_back">Executing one effect before ending previous effect</button>  <br><br>
+    
+    <div id="div1" style=" width:400px; height:400px; background-color: rgb(51, 133, 220);">
+        <p id="p1" style="color: white; font-size: 18pt;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus amet nesciunt aliquid aspernatur ipsum eius tenetur delectus, nobis inventore fuga harum porro enim sit et error, ab, libero voluptatibus iure!</p><br>
+        <img src="../images/car.jpg" id="img1" style="margin-left: 50px; display: none;" width="300" height="200">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Toggle</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            margin: 40px;
+            background-color: blue;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+   $(document).ready(function()
+        {
+            $('#toggle').click(function(){
+                $("#img1").fadeToggle();
+                $("#img2").fadeToggle();
+            });
+        });
+    </script>
+   
+</head>
+<body>
+    <h1>Click on button to FadeIn/fadeOut image</h1>
+    <button type="button" id="toggle">Fade Toggle</button>  <br><br>
+    <p>This image will fadeIn</p>
+    <img id="img1" src="../images/car.jpg" alt="" width="500px" height="500px" style="display: none;">&nbsp;&nbsp;&nbsp;&nbsp;
+    <p>This image will fadeOut</p>
+    <img id="img2" src="../images/car2.jpg" alt="" width="500px" height="500px">
+</body>
+</html>
